@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wikipedia Viewer</title>
+
+    <script src="https://use.fontawesome.com/d6f02ae76f.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!--Hidden Nav Above Content-->
+    <div class="navbar-collapse collapse inverse" id="navbar-header">
+        
+        <div class="container-fluid">
+            
+            <div class="about">
+                
+                <h4>About</h4>
+                <p>This is a project built for <a href="http://freecodecamp.com">FreeCodeCamp</a>. All content provided by <a href="https://www.wikipedia.org/">Wikipedia</a>.</p>
+            </div>
+            
+            <div class="social">
+                
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">View Project on CodePen</a></li>
+                    <li><a href="#">View Project on Github</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+    
+    <!--Nav Toggle-->
+    <div class="navbar navbar-static-top navbar-dark bg-inverse">
+        
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">&#9776;</button>
+            <a href="#" class="navbar-brand"></a>
+        
+        </div>
+    
+    </div>
+
+    <!--Main Content-->
+    <section class="jumbotron text-xs-center">
+        
+        <div class="container">
+            
+            <h1 class="jumbotron-heading">Wikipedia Viewer<i class="fa fa-search"></i></h1>
+            <p class="lead text-muted">Learn About Stuff</p>
+            
+            <p class="input-group">
+                <input type="text" id="searchBox" class='form-control' placeholder="&#9906;">
+            </p>
+            
+            <p>
+                <button id="searchQuery" class="btn btn-primary">Search</button>
+                <a href="https://en.wikipedia.org/wiki/Special:Random" target="blank" id='random' class="btn btn-secondary">Show Me a Random Article</a>
+            </p>
+            
+        
+        </div>
+    
+    </section>
+
+    <div class="album text-muted">
+        
+        <div class="container">
+
+            <div class="row is-flex card-holder"></div> 
+
+        </div>
+    
+    </div>
+
+    <footer class="text-muted">
+      
+        <div class="container">
+            
+            <p class="pull-xs-right">
+                <a href="#">Back to top</a>
+            </p>
+
+            <p>Created by <a href="https://sonorangirl.github.io">Erin Manahan</a> for <a href="http://freecodecamp.com">FreeCodeCamp</a>.</p>
+
+        </div>
+    
+    </footer>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holders.min.js"></script>
+    <script src="js/search.js"></script>
+
+
+  </body>
+</html>

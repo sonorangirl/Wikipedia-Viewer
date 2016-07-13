@@ -1,0 +1,213 @@
+// ==========================================================================
+// Section Styles
+// ==========================================================================
+
+//Hidden Nav Area
+.about {
+  	float: left;
+  	max-width: 30rem;
+  	margin-right: 3rem;
+
+  	h4 {
+  		color: $color-accent;
+  	}
+
+  	p {
+  		color: $color-secondary;
+
+  		a {
+  			color: $color-accent;
+  		}
+  	}
+}
+
+.social {
+
+	h4 {
+		color: $color-accent;
+	}
+
+	a {
+	  	font-weight: bold;
+	  	color: $color-secondary;
+
+	  	&:hover {
+	  		color: $color-accent;
+	  	}
+	}
+}
+
+
+//Main Content - Input
+.jumbotron {
+  	background-color: $color-primary;
+  	max-width: 80%;
+  	margin-right: auto;
+  	margin-left: auto;
+  	margin-bottom: 0;
+
+	.container {
+
+	  	h1 {
+	  		color: $color-shadow;
+	  	}
+
+	  	.input-group {
+	  		margin-bottom: 5%;
+	  		display: -webkit-flex;
+	  		-webkit-flex-direction: column;
+	  		-webkit-align-items: center;
+
+	  // 		label {
+	  // 			white-space: nowrap;
+			//     display: inline;
+			//     max-width: 100%;
+			//     margin-bottom: 5px;
+			//     font-weight: bold;
+			//     color: $color-shadow;
+			//     z-index: 100;
+
+			// }
+
+	  		#searchBox {
+				border: solid 1px $color-accent;
+				background-color: $color-primary;
+				color: $color-shadow;
+				width: 25%;
+				padding-left: 15px;
+
+	  			-webkit-border-radius: 10em;
+				-moz-border-radius: 10em;
+				border-radius: 10em;
+				
+				-webkit-transition: all .5s;
+				-moz-transition: all .5s;
+				transition: all .5s;
+
+				&:focus {
+					width: 100%;
+					color: $color-shadow;
+					
+					-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+					-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+					box-shadow: 0 0 5px rgba(109,207,246,.5);
+
+
+				}
+
+				&::-webkit-input-placeholder {
+				    
+						color: $color-shadow;
+						font-size: 24px;
+						-webkit-transform:rotate(36deg);
+						-webkit-transform-origin-x:1%;
+  				}
+
+  				&::-moz-placeholder {
+					-moz-transform:rotate(36deg);
+					-moz-transform-origin-x:1%;
+				}
+
+
+	  		} //end #searchBox
+
+	  	}// end .input-group
+
+	  	p {
+  			color: $color-accent;
+		}
+
+	}//end .container
+}
+
+//Main Content - Results
+.album {
+  	padding-bottom: 3rem;
+  	background-color: $color-primary;
+}
+
+.card {
+  	float: left;
+  	padding: .75rem;
+  	margin-bottom: 2rem;
+  	border: 0;
+  	border-bottom: solid 4px $color-accent;
+
+  	&:hover {
+		transform: translate(-8px, -6px);
+	}
+
+  	> img {
+	  margin-bottom: .75rem;
+
+	  	&.cover {
+			height: 200px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&-title {
+		text-align: center;
+		color: $color-accent;
+	}
+
+	&-text {
+	  font-size: 85%;
+	  color: $color-primary;
+	}
+
+}
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

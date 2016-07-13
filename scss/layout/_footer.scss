@@ -1,0 +1,20 @@
+// ==========================================================================
+// Footer Styles
+// ==========================================================================
+
+footer {
+	position: relative;
+	height: 60px;
+	bottom: 0;
+	margin-top: 60px;
+  	padding-top: 3rem;
+}
+
+footer p {
+  	margin-bottom: .25rem;
+  	color: $color-secondary;
+
+  	a {
+    	color: $color-accent;
+  	}
+}

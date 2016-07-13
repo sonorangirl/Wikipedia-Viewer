@@ -1,0 +1,31 @@
+// ==========================================================================
+// Button Styles
+// ==========================================================================
+
+
+//Main Input
+#searchQuery.btn.btn-primary, #random.btn.btn-secondary {
+	background-color: $color-primary;
+	color: $color-accent;
+	border: solid 1px $color-accent;
+
+	&:hover {
+		background-color: $color-accent;
+		color: $color-primary;
+		
+	}
+}
+
+//Font Awesome Icon
+.fa {
+    display: inline-flex;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-search:before {
+    content: "\f002";
+}

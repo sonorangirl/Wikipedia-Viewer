@@ -109,10 +109,6 @@ $(document).ready( function() {
 
 	});
 
-
-
-
-
 });
 
 

@@ -58,17 +58,6 @@
 	  		-webkit-flex-direction: column;
 	  		-webkit-align-items: center;
 
-	  // 		label {
-	  // 			white-space: nowrap;
-			//     display: inline;
-			//     max-width: 100%;
-			//     margin-bottom: 5px;
-			//     font-weight: bold;
-			//     color: $color-shadow;
-			//     z-index: 100;
-
-			// }
-
 	  		#searchBox {
 				border: solid 1px $color-accent;
 				background-color: $color-primary;
@@ -159,6 +148,8 @@
 
 }
 
+
+//Makes rows even heights
 .row.is-flex {
     display: flex;
     flex-wrap: wrap;
@@ -168,11 +159,6 @@
     flex-direction: column;
 }
 
-/*
-* And with max cross-browser enabled.
-* Nobody should ever write this by hand. 
-* Use a preprocesser with autoprefixing.
-*/
 .row.is-flex {
     display: -webkit-box;
     display: -webkit-flex;
